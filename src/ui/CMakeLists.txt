@@ -5,7 +5,7 @@ set(CMAKE_AUTORCC ON)
 find_package(QT NAMES Qt6 Qt5 REQUIRED COMPONENTS Widgets)
 find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Widgets)
 
-add_library(lib_ui 
+target add_library(lib_ui 
 SHARED 
     mainwindow.cpp
     mainwindow.ui
