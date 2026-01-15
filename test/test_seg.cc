@@ -8,7 +8,7 @@
 
 DEFINE_string(model_path, "/home/sunrise/Desktop/RDKS100_Drowning/tem/YOLO11n-seg.hbm",
               "Path to BPU Quantized *.hbm model file");
-DEFINE_string(test_img, "/home/sunrise/Desktop/RDKS100_Drowning/tem/bus.jpg",
+DEFINE_string(test_img, "/home/sunrise/Desktop/RDKS100_Drowning/tem/pose_test.png",
               "Path to load the test image.");
 DEFINE_string(label_file, "/app/res/labels/coco_classes.names",
               "Path to load COCO label mapping file.");
