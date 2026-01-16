@@ -19,8 +19,11 @@ foreach(test_src ${TEST_FILES})
         lib_algorithm    # 自动带入 yolo, bytetrack 等头文件路径
         lib_base         # 如果 base 里的 include 也是 PUBLIC 的话
         hobot_utils      # 解决 draw_boxes, letterbox_resize 等符号报错
+        lib_common
+        lib_sensor
         ${HOBOT_LINK_LIBS}
         ${OpenCV_LIBS}
+        ${HIKSDK_LIBRARIES}
     )
 
     message(STATUS "Adding test target: ${test_name}")
